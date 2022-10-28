@@ -3,8 +3,8 @@
 function create_security_group {
     echo "Create security group..."
     SECURITY_GROUP_ID=$(aws ec2 create-security-group \
-        --group-name benchmarking-security-group \
-        --description 'Security group for benchmarking lab' \
+        --group-name hadoop-security-group \
+        --description 'Security group for hadoop lab' \
         --query 'GroupId' \
         --output text)
         
@@ -48,5 +48,10 @@ function get_ec2_public_dns {
     --instance-ids $instance_id \
     --query 'Reservations[].Instances[].PublicDnsName' \
     --output text
-    
 }
+
+function delete_security_group {
+    local security_group_id=$1
+    aws ec2 delete-security-group --group-id $security_group_id
+}
+
