@@ -45,7 +45,6 @@ function setup {
 # 	Writes execution time results into local files using ssh and files descriptors (stdout/stderr)
 ######
 function comparaison {
-    INSTANCE_DNS=ec2-3-236-92-42.compute-1.amazonaws.com
     echo "Waiting for spark to be up and running...."
     #Waiting for spark to be up and running
     while :; do
@@ -94,6 +93,26 @@ function visualisation() {
 }
 
 ######
+## Function that run the friendship recommendation algorithm on hadoop
+# OUTPUTS: 
+# 	The recommendation output file 
+######
+function recommendation() {
+    echo "Start the recommendation....."
+    # Upload needed file in the instance 
+    scp -i keypair.pem recommendation/input/data.txt ubuntu@$INSTANCE_DNS:/home/ubuntu
+    scp -i keypair.pem recommendation/Recommendation.java ubuntu@$INSTANCE_DNS:/home/ubuntu
+
+    # Run the algorithm on hadoop
+    ssh -i keypair.pem ubuntu@$INSTANCE_DNS 'bash -s' < recommendation/deploy.sh
+
+    # Download the algorithm output 
+    scp -i keypair.pem ubuntu@$INSTANCE_DNS:/home/ubuntu/output/part* recommendation/output/suggestion.txt
+
+    echo "Done"
+}
+
+######
 ## Function that wipe all the setup on AWS
 # OUTPUTS: 
 # 	Terminate the instance 
@@ -136,5 +155,6 @@ function wipe {
 setup
 comparaison
 visualisation
+recommendation
 wipe
 
