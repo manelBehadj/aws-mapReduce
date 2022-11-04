@@ -11,7 +11,7 @@ source utils/cli_helper.sh
 #   INSTANCE_ID : The generated instance Id  
 #   INSTANCE_DNS : The generated EC2 Dns  
 # OUTPUTS: 
-# 	The dns of running EC2 instance with all needed setup
+# 	The instance DNS with all needed setup
 ######
 function setup {
     if [[ -f "backup.txt" ]]; then
@@ -74,10 +74,30 @@ function comparaison {
 }
 
 ######
+## Function that display the execution time resuts using plotly library 
+# OUTPUTS: 
+# 	Display dataframes and graphs with collected metrics from the comparaison function
+######
+function visualisation() {
+    # Ulysses metrics path
+    local ulysses_linux_metrics=/comparaison/hadoop_linux/output/linux_time.txt
+    local ulysses_hadoop_metrics=/comparaison/hadoop_linux/output/hadoop_time.txt
+    # datset metrics path
+    local dataset_hadoop_metrics=/comparaison/hadoop_spark/output/hadoop_time.txt
+    local dataset_spark_metrics=/comparaison/hadoop_spark/output/spark_time.txt
+
+    # Compare linux vs hadoop metrcis
+    python3 visualization/display_results.py $ulysses_linux_metrics $ulysses_hadoop_metrics
+    
+    # Compare hadoop vs spark metrcis
+    python3 visualization/display_results.py $dataset_hadoop_metrics $dataset_spark_metrics
+}
+
+######
 ## Function that wipe all the setup on AWS
 # OUTPUTS: 
 # 	Terminate the instance 
-#   Delete the key/pair
+#   Delete the keypair
 #   Delete the security group 
 ######
 function wipe {
@@ -115,5 +135,6 @@ function wipe {
 # Main
 setup
 comparaison
+visualisation
 wipe
 
