@@ -2,7 +2,7 @@
 
 Comparison of Hadoop vs. Linux
 
-![Alt text](/docs/linux-vs hadoop?raw=true "Title")
+![Alt text](/docs/linux_hadoop.png?raw=true "Title") 
 
 Comparison of Hadoop vs. spark
 
