@@ -4,14 +4,14 @@ sudo -i
 
 cd /home/ubuntu
 
-# Create the input folder if does not exist
+#Create the input folder if does not exist
 if [[ ! -d "input" ]]; then 
     mkdir input
 else 
     rm -f input/*
 fi
 
-# Delete the output folder if exist
+#Delete the output folder if exist
 if [[ -d "output" ]]; then 
     rm -rf output
 fi
@@ -29,6 +29,7 @@ if [[ ! -d "dataset" ]]; then
     wget -P dataset http://www.gutenberg.ca/ebooks/delamare-penny/delamare-penny-00-t.txt > /dev/null 2>&1
 fi
 
+#export variables
 source ~/.profile
 
 #For each file into dataset directory

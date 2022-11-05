@@ -1,108 +1,108 @@
 buchanj-midwinter-00-t.txt
-real 10.85
-user 17.29
-sys 0.93
-buchanj-midwinter-00-t.txt
-real 10.31
-user 16.98
-sys 0.93
-buchanj-midwinter-00-t.txt
-real 10.05
-user 16.60
-sys 0.86
-carman-farhorizons-00-t.txt
-real 9.83
-user 16.61
-sys 0.80
-carman-farhorizons-00-t.txt
-real 9.39
-user 15.27
-sys 0.79
-carman-farhorizons-00-t.txt
-real 9.74
-user 16.32
-sys 0.80
-charlesworth-scene-00-t.txt
-real 9.91
-user 16.46
-sys 0.87
-charlesworth-scene-00-t.txt
-real 9.92
-user 16.54
-sys 0.93
-charlesworth-scene-00-t.txt
-real 10.52
-user 18.13
-sys 0.90
-cheyneyp-darkbahama-00-t.txt
-real 10.39
-user 17.93
-sys 0.94
-cheyneyp-darkbahama-00-t.txt
-real 10.53
-user 18.39
-sys 0.89
-cheyneyp-darkbahama-00-t.txt
-real 9.85
-user 16.53
-sys 0.78
-colby-champlain-00-t.txt
-real 9.97
-user 16.55
-sys 0.90
-colby-champlain-00-t.txt
-real 9.98
-user 16.78
-sys 0.85
-colby-champlain-00-t.txt
-real 10.49
-user 18.24
-sys 0.94
-delamare-bumps-00-t.txt
-real 9.78
-user 16.26
-sys 0.86
-delamare-bumps-00-t.txt
-real 9.44
-user 15.39
+real 9.77
+user 16.30
 sys 0.84
-delamare-bumps-00-t.txt
-real 9.51
-user 15.82
-sys 0.81
-delamare-lucy-00-t.txt
-real 9.98
-user 17.41
-sys 0.86
-delamare-lucy-00-t.txt
-real 9.27
-user 15.17
-sys 0.79
-delamare-lucy-00-t.txt
-real 9.40
-user 15.41
-sys 0.95
-delamare-myfanwy-00-t.txt
-real 9.68
-user 16.16
-sys 0.89
-delamare-myfanwy-00-t.txt
-real 9.48
-user 15.90
-sys 0.81
-delamare-myfanwy-00-t.txt
-real 9.37
-user 15.42
-sys 0.90
-delamare-penny-00-t.txt
-real 9.85
-user 17.16
-sys 0.81
-delamare-penny-00-t.txt
-real 9.57
-user 16.06
-sys 0.79
-delamare-penny-00-t.txt
-real 9.69
-user 16.25
+buchanj-midwinter-00-t.txt
+real 9.80
+user 16.40
+sys 0.74
+buchanj-midwinter-00-t.txt
+real 9.96
+user 16.68
+sys 0.71
+carman-farhorizons-00-t.txt
+real 9.47
+user 15.89
+sys 0.76
+carman-farhorizons-00-t.txt
+real 8.98
+user 14.72
+sys 0.73
+carman-farhorizons-00-t.txt
+real 9.64
+user 16.58
+sys 0.82
+charlesworth-scene-00-t.txt
+real 9.96
+user 17.29
+sys 0.78
+charlesworth-scene-00-t.txt
+real 9.67
+user 16.11
 sys 0.85
+charlesworth-scene-00-t.txt
+real 9.74
+user 16.67
+sys 0.86
+cheyneyp-darkbahama-00-t.txt
+real 9.69
+user 16.32
+sys 0.74
+cheyneyp-darkbahama-00-t.txt
+real 9.38
+user 15.48
+sys 0.76
+cheyneyp-darkbahama-00-t.txt
+real 9.44
+user 15.40
+sys 0.79
+colby-champlain-00-t.txt
+real 9.94
+user 17.35
+sys 0.80
+colby-champlain-00-t.txt
+real 9.98
+user 17.16
+sys 0.83
+colby-champlain-00-t.txt
+real 9.29
+user 15.28
+sys 0.68
+delamare-bumps-00-t.txt
+real 9.18
+user 15.48
+sys 0.68
+delamare-bumps-00-t.txt
+real 9.62
+user 16.61
+sys 0.75
+delamare-bumps-00-t.txt
+real 9.08
+user 14.88
+sys 0.82
+delamare-lucy-00-t.txt
+real 9.03
+user 14.80
+sys 0.73
+delamare-lucy-00-t.txt
+real 9.04
+user 14.91
+sys 0.66
+delamare-lucy-00-t.txt
+real 9.12
+user 15.09
+sys 0.82
+delamare-myfanwy-00-t.txt
+real 9.32
+user 15.69
+sys 0.70
+delamare-myfanwy-00-t.txt
+real 9.81
+user 17.03
+sys 0.82
+delamare-myfanwy-00-t.txt
+real 9.22
+user 15.23
+sys 0.83
+delamare-penny-00-t.txt
+real 9.34
+user 15.89
+sys 0.71
+delamare-penny-00-t.txt
+real 9.16
+user 15.31
+sys 0.80
+delamare-penny-00-t.txt
+real 9.06
+user 14.89
+sys 0.71

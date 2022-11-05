@@ -4,6 +4,7 @@ sudo -i
 
 cd /home/ubuntu
 
+# Export env variables
 source ~/.profile
 
 #For each file into dataset directory

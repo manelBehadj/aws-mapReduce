@@ -18,6 +18,7 @@ fi
 # Copy the file in the input directoy 
 mv pg4300.txt input/
 
+#export variables
 source ~/.profile
 
 # Run the hadoop command on the existing wordCout example and measure the exuction time using time command
