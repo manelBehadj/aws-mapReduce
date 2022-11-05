@@ -6,7 +6,7 @@ Comparison of Hadoop vs. Linux
 
 Comparison of Hadoop vs. spark
 
-![Alt text](/docs/spark-hadoop-comparison?raw=true "Title")
+![Alt text](/docs/spark-hadoop-comparison.png?raw=true "Title")
 
 Recommendations of connection for some users
 
